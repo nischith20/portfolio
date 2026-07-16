@@ -42,6 +42,8 @@ export default function Hero() {
         </p>
 
         <div style={{ display: "flex", gap: 14, marginTop: 32 }}>
+          <a 
+            href="#projects">
           <button
             style={{
               background: "var(--brass)",
@@ -56,6 +58,7 @@ export default function Hero() {
           >
             View projects
           </button>
+          </a>
           <a
             href="/resume.pdf"
             download="resume.pdf"
