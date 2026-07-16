@@ -56,6 +56,13 @@ export default function Hero() {
           >
             View projects
           </button>
+          <a
+            href="/resume.pdf"
+            download="resume.pdf"
+            style={{
+              textDecoration: "none",
+            }}
+          >
           <button
             style={{
               background: "transparent",
@@ -69,6 +76,7 @@ export default function Hero() {
           >
             Download resume
           </button>
+          </a>
         </div>
 
         <div style={{ display: "flex", gap: 18, marginTop: 36, alignItems: "center", color: "var(--muted)", fontSize: 13 }}>
