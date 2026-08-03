@@ -10,11 +10,10 @@ export default function About() {
       <SectionLabel>About</SectionLabel>
 
       <p style={{ maxWidth: 720, fontSize: 17, lineHeight: 1.8, color: "var(--text)" }}>
-        Information Science graduate with hands-on experience designing microservices
-        architectures using Java and Spring Boot, backed by a strong foundation in REST
-        APIs, relational databases, and containerization with Docker. I enjoy solving
-        problems at the intersection of backend engineering and data — from building
-        JWT-secured banking APIs to shipping a real-time computer vision model.
+        Information Science graduate with practical experience designing and building full-stack applications 
+        and microservices – from Spring Boot/Java backends to React/TypeScript frontends – with a strong grounding in REST API design,
+         PostgreSQL/MySQL, Docker, and software testing. Passionate about clean architecture, automation, and solving real-world engineering problems.. 
+
       </p>
     </section>
   );
