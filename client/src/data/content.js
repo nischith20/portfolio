@@ -2,7 +2,7 @@ export const skills = [
   { group: "Backend", items: ["Java","Python","Spring Boot","Node.js","Express.js","RESTful APIs", "Spring Security", "Hibernate", "JPA", "Flask"] },
   { group: "Frontend", items: ["React", "Angular","TypeScript", "JavaScript", "React Router", "Vite", "Bootstrap","HTML5", "Tailwind CSS"," REST API Integration"] },
   { group: "Database", items: ["PostgreSQL", "MySQL","Mongo DB"] },
-  { group: "Cloude", items: ["Docker", "Docker Compose", "Git", "GitHub", "OpenAPI/Swagger", "npm","Maven", "CI/CD"] },
+  { group: "Cloud", items: ["Docker", "Docker Compose", "Git", "GitHub", "OpenAPI/Swagger", "npm","Maven", "CI/CD"] },
   { group: "Testing Skills", items: ["Jest", "SuperTest", "Unit Testing", "API Testing", "Integration Testing", "Manual Testing"] },
   { group: "Concepts/Practices", items: ["Authentication & Authorization", "Soft Delete Patterns", "Data-Layer Security", "Optimistic UI Updates", "Server-Side Pagination & Filtering","API Documentation", "Performance Optimization (Lighthouse auditing)", "Technical Documentation"
 ] },
@@ -11,6 +11,7 @@ export const skills = [
 export const projects = [
   {
     entry: "001",
+    link:"https://github.com/nischith20/Banking-Microservices",
     title: "Banking Microservices Platform",
     stack: "Spring Boot · Java · PostgreSQL · Docker · JWT",
     desc: "Architected a microservices banking system — independently deployable Customer, Account, Transaction, Gateway, and Registry services, secured with JWT auth and RBAC, containerized end-to-end with Docker Compose.",
@@ -18,6 +19,7 @@ export const projects = [
   },
   {
     entry: "002",
+    link:"https://github.com/nischith20/taskflow",
     title: "Task Flow — multi-user task management",
     stack: "React · Type Script · Node · Express · PostgreSQL",
     desc: "Built TaskFlow, a full-stack multi-user task management app with React/TypeScript (Kanban board, drag-and-drop, optimistic UI) and a Node.js/Express/PostgreSQL REST API featuring JWT auth, role-based access control, and soft-delete recovery. Implemented server-side filtering, sorting, and pagination; documented the full API with an OpenAPI spec; containerized the stack with Docker Compose for single-command setup, Achieved an 89 Lighthouse performance score.",
@@ -25,6 +27,7 @@ export const projects = [
   },
   {
     entry: "003",
+    link:"https://github.com/nischith20/SignLanguageDetection",
     title: "Real-Time Sign Language Recognition",
     stack: "Python · OpenCV · TensorFlow",
     desc: "Computer vision system recognizing hand gestures live via webcam using contour analysis — 95% accuracy on core gesture classes.",
@@ -32,9 +35,10 @@ export const projects = [
   },
   {
     entry: "004",
-    title: "Outhana Cafe ",
-    stack: "Angular · Spring Boot · MySQL",
-    desc: "End-to-end cafe management app: Angular frontend, Spring Boot REST backend, MySQL persistence, CRUD-ready feedback/contact APIs.",
+    title: "BotLeague ",
+    link:"https://github.com/nischith20/botleague",
+    stack: "React · vite · tailwind CSS",
+    desc: "A frontend-only React + Vite application for BotLeague, a national robotics competition platform. Landing page with hero section, Registration forms (Judge, Volunteer, Community Member), Footer with quick links and social media.",
     accent: "teal",
   },
   

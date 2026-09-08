@@ -10,15 +10,24 @@ export default function Projects() {
 
       <div style={{ display: "flex", flexDirection: "column" }}>
         {projects.map((p) => (
-          <div
+          <a
             key={p.entry}
+            href={p.link} 
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               borderTop: "1px solid var(--hairline)",
               padding: "28px 0",
               display: "flex",
               gap: 28,
               flexWrap: "wrap",
+              textDecoration: "none",
+              color: "inherit",
+              transition: "background 0.2s",
+              cursor: "pointer",
             }}
+            onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.03)"}
+            onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
           >
             <div
               className="font-mono"
@@ -48,7 +57,7 @@ export default function Projects() {
             <div style={{ display: "flex", alignItems: "flex-start", color: "var(--muted)" }}>
               <ArrowUpRight size={20} />
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
