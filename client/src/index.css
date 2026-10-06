@@ -46,3 +46,68 @@ body {
 button {
   font-family: inherit;
 }
+
+.hero-title {
+  font-size: clamp(40px, 8vw, 80px);
+  line-height: 1.15;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  margin: 0;
+}
+
+.reveal-wrap {
+  display: block;          /* each part on its own line */
+  overflow: hidden;
+  padding-bottom: 0.12em;  /* stops descenders being clipped */
+  margin-bottom: -0.12em;  /* cancels the extra spacing */
+}
+
+.reveal-text {
+  display: inline-block;
+  transform: translateY(110%);
+  animation: reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes reveal {
+  to { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-text {
+    animation: none;
+    transform: none;
+  }
+}
+
+.page-section {
+  padding: 0 clamp(20px, 5vw, 48px) 48px;
+}
+ .shift-slight {
+  max-width: 640px;
+  margin-left: clamp(0px, 10vw, 240px); /* adjust the 10vw */
+  margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  .shift-slight {
+    max-width: none;
+    margin-left: 15px;
+    
+  }
+}
+
+.shift-right {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: 10vw;
+  margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  .shift-right {
+    max-width: none;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}

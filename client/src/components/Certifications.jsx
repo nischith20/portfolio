@@ -4,7 +4,7 @@ import { certifications } from "../data/content";
 
 export default function Certifications() {
   return (
-    <section id="certifications" style={{ padding: "0 48px 80px" }}>
+    <section id="certifications" className="page-section shift-right">
       <SectionLabel>Certifications</SectionLabel>
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>

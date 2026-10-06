@@ -5,29 +5,28 @@ export default function Navbar({ theme, toggleTheme }) {
   return (
     <nav
       style={{
+        position: "sticky",
+        top: 0,
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "right",
         alignItems: "center",
         padding: "24px 48px",
-        borderBottom: "1px solid var(--hairline)",
-      }}
+        background: "color-mix(in srgb, var(--bg) 80%, transparent)",
+        backdropFilter: "blur(5px)",
+        WebkitBackdropFilter: "blur(10px)",
+      }} 
     >
-      <span className="font-display" style={{ fontSize: 20, fontWeight: 600 }}>
-        Nischith Y S
-      </span>
-
       <div
         style={{
           display: "flex",
-          gap: 28,
+          gap: 40,
           alignItems: "center",
           fontSize: 14,
           color: "var(--muted)",
         }}
       >
         <a href="#about" style={{ color: "inherit", textDecoration: "none" }}>About</a>
-        <a href="#skills" style={{ color: "inherit", textDecoration: "none" }}>Skills</a>
-        <a href="#projects" style={{ color: "inherit", textDecoration: "none" }}>Projects</a>
+        <a href="#projects" style={{ color: "inherit", textDecoration: "none" }}>Works</a>
         <a href="#contact" style={{ color: "inherit", textDecoration: "none" }}>Contact</a>
 
         <button

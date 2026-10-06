@@ -10,35 +10,24 @@ export default function Hero() {
         display: "flex",
         flexWrap: "wrap",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "space-around",
         padding: "80px 48px",
         gap: 40,
       }}
     >
       <div style={{ maxWidth: 520 }}>
-        <div
-          className="font-mono"
-          style={{
-            fontSize: 12,
-            letterSpacing: "0.15em",
-            color: "var(--brass)",
-            marginBottom: 12,
-            textTransform: "uppercase",
-          }}
-        >
-          Backend-leaning full stack developer
-        </div>
 
-        <h1
-          className="font-display"
-          style={{ fontSize: 48, lineHeight: 1.15, margin: 0, fontWeight: 600 }}
-        >
-          I build systems that move money and make sense.
+        <h1 className="hero-title">
+          <span className="reveal-wrap">
+            <span className="reveal-text" style={{ "--delay": "0.2s" }}>Hello</span>
+          </span>
+          <span className="reveal-wrap">
+            <span className="reveal-text" style={{ "--delay": "0.5s" }}>I am Nischith</span>
+          </span>
         </h1>
 
         <p style={{ color: "var(--muted)", fontSize: 16, lineHeight: 1.7, marginTop: 20 }}>
-          Java & Spring Boot microservices, REST APIs, and a growing full-stack range —
-          with a data analyst's eye for what the numbers mean.
+          I am a software developer based in Bengaluru. I use my passion and skills to designing and building full-stack applications
         </p>
 
         <div style={{ display: "flex", gap: 14, marginTop: 32 }}>
@@ -93,7 +82,7 @@ export default function Hero() {
                 <Mail size={14} /> Email
             </a>
             <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                <MapPin size={14} /> Mysuru, Karnataka
+                <MapPin size={14} /> Bengaluru, Karnataka
             </span>
         </div>
       </div>

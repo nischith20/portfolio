@@ -5,19 +5,18 @@ import { projects } from "../data/content";
 
 export default function Projects() {
   return (
-    <section id="projects" style={{ padding: "0 48px 80px" }}>
+    <section id="projects" style={{ padding: "100px 48px 80px" }}>
       <SectionLabel>Projects</SectionLabel>
 
       <div style={{ display: "flex", flexDirection: "column" }}>
         {projects.map((p) => (
           <a
             key={p.entry}
-            href={p.link} 
+            href={p.github} 
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              borderTop: "1px solid var(--hairline)",
-              padding: "28px 0",
+              padding: "58px 0",
               display: "flex",
               gap: 28,
               flexWrap: "wrap",
@@ -26,7 +25,7 @@ export default function Projects() {
               transition: "background 0.2s",
               cursor: "pointer",
             }}
-            onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255,255,255,0.03)"}
+            onMouseEnter={(e) => e.currentTarget.style.background = "var(--surface)"}
             onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
           >
             <div
@@ -37,13 +36,14 @@ export default function Projects() {
                 minWidth: 90,
               }}
             >
-              ENTRY NO.
+            
+              <br />
               <br />
               {p.entry}
             </div>
 
             <div style={{ flex: 1, minWidth: 260 }}>
-              <h3 className="font-display" style={{ fontSize: 22, margin: "0 0 6px", fontWeight: 600 }}>
+              <h3 className="font-display" style={{ fontSize: 22, margin: "0 0 6px", fontWeight: 600,textTransform: "uppercase" }}>
                 {p.title}
               </h3>
               <div className="font-mono" style={{ fontSize: 12, color: "var(--muted)", marginBottom: 10 }}>
