@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{  padding: "40px 48px 80px", margin:"0 200px 20px"}}>
+    <section id="contact" className="page-section shift-slight">
       <SectionLabel>Contact</SectionLabel>
 
       <div style={{ maxWidth: 480 }}>
